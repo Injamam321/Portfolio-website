@@ -1,0 +1,43 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.button-custom{
+    text-decoration: none;
+    background-color:coral;
+    color:white;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
+.container{
+    background-image: url(./image/top-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.top-left h1{
+    font-size: 35px;
+
+}
+.half-width{
+    width: 35%;
+    padding: 20px;
+}
+.rotating-image {
+    width: 90%;
+    animation: rotate 10s infinite linear;
+}
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg); 
+    }
+}
